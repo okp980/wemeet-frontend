@@ -1,13 +1,14 @@
-import "@testing-library/jest-dom"
-import { render, screen } from "@testing-library/react"
-import Home from "@/app/page"
+import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
+import Home from '@/app/(welcome)/page';
 
-describe("Page", () => {
-  it("renders a heading", () => {
-    render(<Home />)
+describe('Page', () => {
+  it('renders a heading', () => {
+    render(<Home />);
 
-    const heading = screen.getByRole("heading", { level: 1 })
+    const heading = screen.getByRole('heading', { level: 1 });
 
-    expect(heading).toBeInTheDocument()
-  })
-})
+    expect(heading).toBeInTheDocument();
+  });
+});
+
